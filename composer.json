@@ -1,0 +1,29 @@
+{
+    "name": "flamix/apps24-laravel-lead",
+    "homepage": "https://github.com/rshkabko/apps24-laravel-lead",
+    "description": "Apps24 and Laravel integration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Shkabko",
+            "email": "r.shkabko@flamix.email",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": ">=8.0",
+        "flamix/b24-lead": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flamix\\Apps24LaravelLead\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Flamix\\Apps24LaravelLead\\ServiceProvider"
+            ]
+        }
+    }
+}
